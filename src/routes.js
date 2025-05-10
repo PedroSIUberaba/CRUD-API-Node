@@ -10,10 +10,13 @@ router.get('/', (req, res) => {
     })
 });
 
+//Routes Pessoa
 router.get('/pessoas', selectPessoas)
 router.get('/pessoa', selectPessoa)
 router.post('/pessoa', insertPessoa)
 router.put('/pessoa', updatePessoa)
 router.delete('/pessoa', deletePessoa)
+
+
 
 export default router;
